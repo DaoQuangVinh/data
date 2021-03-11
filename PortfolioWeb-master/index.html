@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Site</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section>
+        <nav>
+            <a href="/" class="logo">Trang web cá nhân</a>
+            <ul>
+                <li><a href="/" class="active">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="https://github.com/DaoQuangVinh" target="blank">Projects</a></li>
+            </ul>
+            <div class="toggle"></div>
+        </nav>
+        <div class="text-container">
+            <p>Hello,</p>
+            <p>I'M VINH</p>
+            <p>I am a Student <br>in THPT Hung Vuong, Data Analytics in Google, Web Development</p>
+            <a href="contact.html"><button class="hire-btn">Hire me</button></a>
+            <button data-modal-target="#modal" class="down-cv">My Project in Githun.com</button>
+        </div>
+        <img src="images/model1.png" class="model" alt="">
+    </section>
+    <div class="modal" id="modal">
+        <div class="modal-header">
+            <div class="title">About My Project</div>
+            <button data-close-btn class="close-btn">&times;</button>
+        </div>
+        <div class="modal-body">
+            Hello,<br><br> Follow link: <a> https://github.com/DaoQuangVinh/ </a>
+        </div>
+    </div>
+    <div id="overlay"></div>
+    <div class="about-container">
+        <img src="images/about1.png" class="abotimg" alt="">
+        <div class="about-text">
+            <p>Giới thiệu</p>
+            <p>Hiện tại là học sinh trường THPT Hùng Vương, Web Development, Data Analytics</p>
+            <p>
+            </p>
+            <p>I am also an upcoming Full Stack Developer majoring on Python, Javascript, Html & Css, Heroku. If you have any project or any website you would like to be done faster don't hesitate to contact me.</p>
+            <a href="https://github.com/DaoQuangVinh"><button>Các dự án của tôi trên Github.com</button></a>
+        </div>
+    </div>
+    <div class="services">
+        <div class="services-text">
+            <p>Services this website</p>
+            <p>Copyright by Dao Quang Vinh &copy</p>
+            <p>Trang web này được bảo vệ bởi Dao Quang Vinh &trade;
+            </p>
+        </div>
+        <div class="box-container">
+            <div class="box-1">
+                <span>1</span>
+                <p class="heading">Các dự án mà tôi đang phát triển</p>
+                <p class="details">
+                </p>
+                <button>Đọc thêm</button>
+            </div>
+
+
+            <div class="contact-me">
+                <p>Liên hệ với tôi nếu bạn có ý tưởng phát triển về trang web này !</p>
+                <a href="contact.html"><button> Contact me</button></a>
+            </div>
+            <footer>
+                <p>Software Developer</p>
+                <p>Tôi có thể xây dựng được trang web với Python, HTML, CSS, Javascript
+                </p>
+                <div class="social-icons">
+                    <a href="https://web.facebook.com/daoquangvinhdev" target="blank"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/@Daoquangvinh13" target="blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/daoquangvinh.408204/" target="blank"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/dao-quang-vinh-7282a6201/" target="blank"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="https://open.spotify.com/user/31lurhm5prjibxltlbpcleg2dglq?fbclid=IwAR28avl2ln4zlD30htZ1GYMiPT6DpkYHyP9ObJByZPYbSycZp3vjFVqQhWY" target="blank"><i
+                            class="fab fa-spotify"></i></a>
+
+                </div>
+                <p class="copyright">Dao Quang Vinh &copy; &trade;</p>
+            </footer>
+            <div class="a-social-b">
+                <a href="https://web.facebook.com/daoquangvinhdev/" target="blank"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/@Daoquangvinh13" target="blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/daoquangvinh.408204/" target="blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/dao-quang-vinh-7282a6201/" target="blank"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://open.spotify.com/user/31lurhm5prjibxltlbpcleg2dglq?fbclid=IwAR28avl2ln4zlD30htZ1GYMiPT6DpkYHyP9ObJByZPYbSycZp3vjFVqQhWY" target="blank"><i
+                        class="fab fa-youtube"></i></a>
+            </div>
+            <script type="text/javascript" src="js/JQuery.js"></script>
+            <script type="text/javascript" src="js/main.js" defer></script>
+            <script type="text/javascript">
+                $(document).ready(function() {
+                    $('.toggle').click(function() {
+                        $('.toggle').toggleClass('active')
+                        $('nav').toggleClass('active')
+                    })
+                })
+            </script>
+</body>
+
+</html>
